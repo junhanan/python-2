@@ -305,7 +305,7 @@ Given the following data:
         "4, 8439, 12.77, False",
         "5, 3424, 11.34, False",
     ]
-```
+``` 
 
 Convert this data (a list of strings) to a list of `Invoice` data classes, such that when this list is pprinted to the console, 
 it appears like the following:
