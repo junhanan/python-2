@@ -137,8 +137,27 @@
 #     print(CarCollector.get_data())
 
 
+class Invoice:
+    def __init__(self, data):
+        self.data = data
+
+    def invoices(self):
+        for i in self.data:
+            parts = i.split(",")
+            print(f"Invoice(invoice_id={parts[0]}, user_id={parts[1]}, amount={parts[2]}, paid={parts[3]})")
+        
 
 
+
+def main():
+    data = [
+        "1, 2322, 10.00, False",
+        "2, 5435, 60.30, True",
+        "3, 3433, 15.63, False",
+        "4, 8439, 12.77, False",
+        "5, 3424, 11.34, False",
+    ]
+    print(Invoice(data).invoices())
 
 
 
