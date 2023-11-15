@@ -1,3 +1,5 @@
+import random
+
 # def transform(person):
 #     result ={
 #         # 'id': person['id'],
@@ -132,35 +134,74 @@
 #             "make": CarCollector.car_dict[c['id']]
 #         }
 #         return rectum
+#     print(CarCollector.get_data())
 
 # def main():
 #     print(CarCollector.get_data())
 
 
-class Invoice:
-    def __init__(self, data):
-        self.data = data
+# class Invoice:
+#     def __init__(self, data):
+#         self.data = data
 
-    def invoices(self):
-        for i in self.data:
-            parts = i.split(",")
-            print(f"Invoice(invoice_id={parts[0]}, user_id={parts[1]}, amount={parts[2]}, paid={parts[3]})")
+#     def invoices(self):
+#         for i in self.data:
+#             parts = i.split(",")
+#             print(f"Invoice(invoice_id={parts[0]}, user_id={parts[1]}, amount={parts[2]}, paid={parts[3]})")
         
 
 
-
-def main():
-    data = [
-        "1, 2322, 10.00, False",
-        "2, 5435, 60.30, True",
-        "3, 3433, 15.63, False",
-        "4, 8439, 12.77, False",
-        "5, 3424, 11.34, False",
-    ]
-    print(Invoice(data).invoices())
-
+# def main():
+#     data = [
+#         "1, 2322, 10.00, False",
+#         "2, 5435, 60.30, True",
+#         "3, 3433, 15.63, False",
+#         "4, 8439, 12.77, False",
+#         "5, 3424, 11.34, False",
+#     ]
+#     print(Invoice(data).invoices())
 
 
+
+
+
+# def main():
+
+#     class Character:
+
+#         def __init__(self, hit_points):
+#             self.hit_points = hit_points
+
+#         def fight(self, character):
+#             random_number = random.randint(1, 20)
+#             character.hit_points -= random_number
+#             if character.hit_points < 0:
+#                 character.hit_points = 0
+    
+#     class Fighter(Character):
+#         def __init__(self, hit_points):
+#             super().__init__(hit_points)
+#             self.name = "Fighter"
+        
+#         def __repr__(self) -> str:
+#             return f"{self.name}: {self.hit_points} hit points."
+    
+    
+#     class Dwarf(Character):
+#         def __init__(self, hit_points):
+#             super().__init__(hit_points)
+#             self.name = "Dwarf"
+
+#         def __repr__(self) -> str:
+#             return f"{self.name}: {self.hit_points} hit points."
+#     f = Fighter(18)
+#     d = Dwarf(15)
+#     print(f)
+#     print(d)
+#     f.fight(d)
+#     d.fight(f)
+#     print(f)
+#     print(d)
 
 
 
